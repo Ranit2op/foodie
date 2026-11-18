@@ -1,6 +1,16 @@
 # 🍔 Foodie - Food Delivery & Ordering App
 
+[![Download APK](https://img.shields.io/badge/Download-Foodie%20APK%20(v1.0.0)-brightgreen?style=for-the-badge&logo=android)](https://github.com/Ranit2op/foodie/releases/download/v1.0.0/Foodie-v1.0.0.apk)
+[![Release](https://img.shields.io/github/v/release/Ranit2op/foodie?style=for-the-badge)](https://github.com/Ranit2op/foodie/releases)
+
 A modern, fast, and feature-rich Food Delivery mobile application built with **React Native**, **Expo SDK 53**, and native Android support. Powered by **TheMealDB API**.
+
+---
+
+## 📱 Download the App
+
+You can download and install the latest Android APK directly on your phone:
+👉 **[Download Foodie-v1.0.0.apk](https://github.com/Ranit2op/foodie/releases/download/v1.0.0/Foodie-v1.0.0.apk)**
 
 ---
 
@@ -39,7 +49,7 @@ A modern, fast, and feature-rich Food Delivery mobile application built with **R
 ### 2. Installation
 ```bash
 # Clone the repository
-git clone https://github.com/<YOUR_USERNAME>/foodie.git
+git clone https://github.com/Ranit2op/foodie.git
 cd foodie
 
 # Install dependencies
