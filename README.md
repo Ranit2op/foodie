@@ -1,50 +1,79 @@
-# Welcome to your Expo app 👋
+# 🍔 Foodie - Food Delivery & Ordering App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, fast, and feature-rich Food Delivery mobile application built with **React Native**, **Expo SDK 53**, and native Android support. Powered by **TheMealDB API**.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Features
 
-   ```bash
-   npm install
-   ```
+- 🍕 **Explore & Search:** Browse delicious meals across multiple categories (Chicken, Seafood, Vegetarian, Pasta, Desserts, Breakfast, and more).
+- 🔍 **Real-time Search:** Search dishes instantly with live search results.
+- 🛒 **Cart & Pricing System:** Add/remove dishes, customize quantities (`+` / `-`), view item totals, and dynamic bill breakdown (Subtotal, Delivery Fee, Taxes).
+- ⚡ **Free Delivery Perks:** Dynamic progress bar offering Free Delivery for orders above ₹499.
+- 📍 **Checkout Flow:** Enter delivery address, contact details, and special delivery instructions.
+- 💳 **Multiple Payment Methods:** Cash on Delivery (COD), UPI (GPay/PhonePe), and Debit/Credit Cards.
+- 🛵 **Live Order Tracking:** 4-stage visual progress tracker (Order Confirmed ➔ Preparing in Kitchen ➔ Rider on the Way ➔ Delivered).
+- 📦 **Order History (My Orders):** Persistent order history with 1-tap **Reorder** functionality.
+- ❤️ **Favorites:** Save favorite recipes/dishes and add them directly to the cart.
+- 🎨 **Modern UI/UX:** Clean theme, custom squircle brand icon, and smooth splash screen.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Tech Stack
 
-In the output, you'll find options to open the app in a
+- **Framework:** React Native (0.79.4) & Expo SDK 53
+- **Navigation:** React Navigation (Native Stack) & Expo Router
+- **State Management & Persistence:** React Context API & `@react-native-async-storage/async-storage`
+- **Native Platform:** Android (Gradle 8.13, Kotlin 2.0, Java 17)
+- **API:** TheMealDB API
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🚀 Getting Started
 
-## Get a fresh project
+### 1. Prerequisites
+- Node.js (v18+)
+- Java JDK 17 (for Android build)
+- Android SDK
 
-When you're ready, run:
-
+### 2. Installation
 ```bash
-npm run reset-project
+# Clone the repository
+git clone https://github.com/<YOUR_USERNAME>/foodie.git
+cd foodie
+
+# Install dependencies
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 3. Run Development Server
+```bash
+npm start
+```
+- Press `a` for Android Emulator / Device (via Expo Go)
+- Press `w` for Web preview
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📱 Build Standalone Android APK
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+To build the release APK directly without Expo Go:
 
-## Join the community
+```bash
+# 1. Prebuild native android folder (if not generated)
+npx expo prebuild --platform android --no-install
 
-Join our community of developers creating universal apps.
+# 2. Build release APK
+cd android
+.\gradlew.bat assembleRelease
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The output APK will be located at:
+```
+android/app/build/outputs/apk/release/app-release.apk
+```
+
+---
+
+## 📄 License
+This project is open source and available under the [MIT License](LICENSE).
