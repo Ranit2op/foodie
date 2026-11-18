@@ -83,7 +83,4 @@ The output APK will be located at:
 android/app/build/outputs/apk/release/app-release.apk
 ```
 
----
 
-## 📄 License
-This project is open source and available under the [MIT License](LICENSE).
